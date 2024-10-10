@@ -284,7 +284,6 @@ button {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
 }
 
@@ -307,7 +306,6 @@ button {
   color: #2e2f42;
 
   display: block;
-  padding: 16px 0;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -357,10 +355,14 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 168px;
+}
+.menu-contacts {
+  margin-bottom: 24px;
 }
 
 .menu-contacts-link {
-  padding: 16px 0;
+  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -425,13 +427,10 @@ button {
     ),
     url("../images/hero/hero-mobile/hero-img-2x.jpg");
   background-repeat: no-repeat;
-  max-width: 320px;
   background-position: center;
   background-size: cover;
-  background-color: #2e2f42;
   padding: 72px 0;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -442,8 +441,8 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  display: block;
-  margin: 72px 52px;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -522,9 +521,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  padding-top: 96px;
-  padding-bottom: 96px;
-  justify-content: center;
 }
 
 .adv-li {
@@ -575,8 +571,6 @@ button {
   .adv-list {
     justify-content: center;
     gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 120px;
   }
 
   .adv-li {
@@ -605,7 +599,7 @@ button {
 /*Mobile*/
 .team {
   background-color: #f4f4fd;
-  padding: 96px 28px;
+  padding: 96px 0;
 }
 .our-team-title {
   font-weight: 700;
@@ -700,10 +694,6 @@ button {
     column-gap: 24px;
     row-gap: 64px;
   }
-
-  .card-container {
-    padding: 108px 0;
-  }
 }
 
 /*Desktop*/
@@ -739,7 +729,6 @@ button {
 }
 
 .p-container {
-  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -809,6 +798,10 @@ button {
 
 /*laptop*/
 @media screen and (min-width: 768px) {
+  .p-container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
   .p-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -849,7 +842,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 72px;
-  padding-left: 0;
 }
 .footer-description {
   display: flex;
